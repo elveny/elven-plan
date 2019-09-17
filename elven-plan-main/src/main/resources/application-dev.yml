@@ -1,0 +1,8 @@
+# application.yml
+# YML文件格式是YAML (YAML Aint Markup Language)编写的文件格式,YAML是一种直观的能够被电脑识别的的数据数据序列化格式,他并且容易被人类阅读.
+# 注意：yml的缩进，使用空格符，而不要使用tab键
+
+
+# 服务信息
+server:
+  port: 8880
