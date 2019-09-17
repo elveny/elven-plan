@@ -37,13 +37,10 @@ subprojects {
     apply plugin: "org.springframework.boot"
     apply plugin: "io.spring.dependency-management"
     apply plugin: "java"
-    
-    
 
     dependencies {
         // implementation 是Gradle4.1新增的依赖方式，implementation和compile不同，该依赖方式不会产生传递依赖
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
-//        testImplementation 'junit:junit:${junitVersion}'
     }
 }
 
