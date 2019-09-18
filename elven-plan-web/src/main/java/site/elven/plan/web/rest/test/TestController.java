@@ -32,7 +32,7 @@ public class TestController extends BaseController {
 
     @RequestMapping("hello")
     public String hello() {
-        logger.info("start hello...开始“你好”");
+        logger.info("start hello...开始“你好”。。。");
         return "hello world!!!您好，世界！！！";
     }
 
