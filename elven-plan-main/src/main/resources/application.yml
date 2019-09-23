@@ -3,6 +3,10 @@
 # 注意：yml的缩进，使用空格符，而不要使用tab键
 
 # 应用信息
+application:
+  title: elven-paln
+  version: 1.0-SNAPSHOT
+  formatted-version: (1.0)
 info:
   contact:
     email: elve1984@163.com
@@ -16,7 +20,12 @@ server:
 
 # spring.application
 spring:
-  main:
-    banner-mode: "off"
   application:
     name: elven-plan
+    admin:
+      enabled: false
+  main:
+    banner-mode: "console" # off, log
+  banner:
+    location: banners/elven-plan-banner.txt
+

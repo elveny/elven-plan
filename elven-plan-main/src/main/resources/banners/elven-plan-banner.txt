@@ -1,0 +1,14 @@
+########################################################################
+banner info:
+application.title: ${application.title}
+application.version: ${application.version}
+application.formatted-version: ${application.formatted-version}
+info.contact.email: ${info.contact.email}
+info.contact.phone-no: ${info.contact.phone-no}
+spring-boot.version: ${spring-boot.version}
+spring-boot.formatted-version: ${spring-boot.formatted-version}
+Ansi.NAME: ${Ansi.NAME}
+AnsiColor.NAME: ${AnsiColor.NAME}
+AnsiBackground.NAME: ${AnsiBackground.NAME}
+AnsiStyle.NAME: ${AnsiStyle.NAME}
+########################################################################
