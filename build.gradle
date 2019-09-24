@@ -40,11 +40,13 @@ allprojects {
 
 subprojects {
 
-
     dependencies {
         // https://mvnrepository.com/artifact/org.projectlombok/lombok
-        compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
+        annotationProcessor 'org.projectlombok:lombok:1.18.10'
+        compileOnly 'org.projectlombok:lombok:1.18.10'
         // implementation 是Gradle4.1新增的依赖方式，implementation和compile不同，该依赖方式不会产生传递依赖
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.10'
+        testCompileOnly 'org.projectlombok:lombok:1.18.10'
     }
 }
