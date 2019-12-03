@@ -8,7 +8,21 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
-
+/**
+ * @Filename CustomComponent.java
+ *
+ * @description
+ *
+ * @Version 1.0
+ *
+ * @author elven
+ * @History
+ *
+ * <li>Author: elven</li>
+ * <li>Date: 2019/9/25 23:11</li>
+ * <li>Version: 1.0</li>
+ * <li>Content: create</li>
+ */
 @Component
 @Slf4j
 public class PlanApplicationArgument {

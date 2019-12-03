@@ -1,6 +1,6 @@
 ########################################################################
 banner info:
-application.title: ${application.title}
+application.title: ${application.name}
 application.version: ${application.version}
 application.formatted-version: ${application.formatted-version}
 info.contact.email: ${info.contact.email}

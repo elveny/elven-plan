@@ -4,13 +4,31 @@
 
 # 应用信息
 application:
-  title: elven-paln
+  name: elven-plan
   version: 1.0-SNAPSHOT
   formatted-version: (1.0)
 info:
   contact:
     email: elve1984@163.com
     phone-no: 18888888888
+
+# 日志配置
+logging:
+  config: classpath:logging/logback-spring.xml
+  level:
+    root: INFO #FATAL ERROR WARN INFO DEBUG TRACE
+    org.springframework.web: DEBUG
+    org.hibernate: ERROR
+    elven-plan: DEBUG
+  #  path: ./logs    # ./表示当前应用的根目录
+  file: ./logs/${application.name}.log
+  file.max-history: 1
+  group.elven-plan: site.elven.plan.plugin, site.elven.plan.web
+
+
+# 开启debug和trace模式，同时打开了日志debug和trace级别
+debug: false
+trace: false
 
 # 服务信息
 server:
@@ -29,3 +47,10 @@ spring:
   banner:
     location: banners/elven-plan-banner.txt
 
+acme:
+  remote-address: 192.168.1.1
+  security:
+    username: admin
+    roles:
+      - USER
+      - ADMIN
