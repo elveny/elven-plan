@@ -5,10 +5,12 @@
 package site.elven.plan.configuration;
 
 import org.springframework.beans.factory.config.YamlMapFactoryBean;
+import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import site.elven.plan.web.rest.properties.AcmeProperties;
+import site.elven.plan.web.converter.FastJsonHttpMessageConverter;
+import site.elven.plan.web.properties.AcmeProperties;
 
 /**
  * @Filename CustomComponent.java
@@ -32,4 +34,12 @@ public class SomeConfiguration {
     public YamlMapFactoryBean yamlMapFactoryBean(){
         return new YamlMapFactoryBean();
     }
+
+    @Bean
+    public HttpMessageConverters customConverters(){
+        FastJsonHttpMessageConverter fastjsonHttpMessageConverter = new FastJsonHttpMessageConverter();
+
+        return new HttpMessageConverters(fastjsonHttpMessageConverter);
+    }
+
 }

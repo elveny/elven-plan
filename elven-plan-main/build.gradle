@@ -1,7 +1,5 @@
 dependencies {
-    compile project(':elven-plan-common')
     compile project(':elven-plan-web')
-    compile project(':elven-plan-plugin')
 }
 
 bootJar {

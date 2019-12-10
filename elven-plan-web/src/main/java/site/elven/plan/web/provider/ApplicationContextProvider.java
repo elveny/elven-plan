@@ -2,7 +2,7 @@
  * elven.site Inc.
  * Copyright (c) 2019-2029 All Rights Reserved.
  */
-package site.elven.plan.web.rest.provider;
+package site.elven.plan.web.provider;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

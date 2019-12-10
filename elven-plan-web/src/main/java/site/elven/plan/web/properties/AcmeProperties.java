@@ -2,7 +2,7 @@
  * elven.site Inc.
  * Copyright (c) 2019-2029 All Rights Reserved.
  */
-package site.elven.plan.web.rest.properties;
+package site.elven.plan.web.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

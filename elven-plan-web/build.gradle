@@ -1,4 +1,7 @@
 dependencies {
+    compile project(':elven-plan-common')
+    compile project(':elven-plan-plugin')
+    
     // implementation 是Gradle4.1新增的依赖方式，implementation和compile不同，该依赖方式不会产生传递依赖
     compile ("org.springframework.boot:spring-boot-starter-web"){
         exclude module: "spring-boot-starter-tomcat"

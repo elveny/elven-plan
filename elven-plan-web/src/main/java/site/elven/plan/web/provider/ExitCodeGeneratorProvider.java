@@ -2,7 +2,7 @@
  * elven.site Inc.
  * Copyright (c) 2019-2029 All Rights Reserved.
  */
-package site.elven.plan.web.rest.provider;
+package site.elven.plan.web.provider;
 
 import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.stereotype.Component;

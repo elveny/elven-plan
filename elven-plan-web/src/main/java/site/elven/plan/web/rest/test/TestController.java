@@ -11,12 +11,15 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.YamlMapFactoryBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import site.elven.plan.web.properties.AcmeProperties;
+import site.elven.plan.web.provider.ApplicationContextProvider;
+import site.elven.plan.web.provider.ExitCodeGeneratorProvider;
 import site.elven.plan.web.rest.BaseController;
-import site.elven.plan.web.rest.properties.AcmeProperties;
-import site.elven.plan.web.rest.provider.ApplicationContextProvider;
-import site.elven.plan.web.rest.provider.ExitCodeGeneratorProvider;
+
+import java.util.Date;
 
 /**
  * 公用测试Controller
@@ -98,6 +101,17 @@ public class TestController extends BaseController {
         logger.info("applicationContextProvider.getApplicationContext() = {}", applicationContextProvider.getApplicationContext());
         System.exit(SpringApplication.exit(applicationContextProvider.getApplicationContext(), exitCodeGeneratorProvider));
         return "success";
+    }
+
+    @RequestMapping("user")
+    public TestUser user(@RequestBody TestUser testUser){
+        testUser.setId(1L);
+        testUser.setName("埃尔文");
+        testUser.setAge(35.5d);
+        testUser.setBirthDate(new Date(84, 7, 7));
+
+        logger.info("user : {}", testUser);
+        return testUser;
     }
 
 }

@@ -20,10 +20,12 @@ logging:
     org.springframework.web: DEBUG
     org.hibernate: ERROR
     elven-plan: DEBUG
-  #  path: ./logs    # ./表示当前应用的根目录
-  file: ./logs/${application.name}.log
-  file.max-history: 1
   group.elven-plan: site.elven.plan.plugin, site.elven.plan.web
+  file:
+    path: ./logs
+    name: ./logs/${application.name}.log
+    max-history: 1
+    max-size: 10MB
 
 
 # 开启debug和trace模式，同时打开了日志debug和trace级别
