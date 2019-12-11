@@ -28,5 +28,5 @@ public class TestUser {
     private long id;
     private String name;
     private double age;
-    private Date birthDate;
+    private Date birthday;
 }

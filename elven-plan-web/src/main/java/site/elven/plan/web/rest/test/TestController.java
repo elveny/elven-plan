@@ -108,7 +108,7 @@ public class TestController extends BaseController {
         testUser.setId(1L);
         testUser.setName("埃尔文");
         testUser.setAge(35.5d);
-        testUser.setBirthDate(new Date(84, 7, 7));
+        testUser.setBirthday(new Date(84, 7, 7));
 
         logger.info("user : {}", testUser);
         return testUser;
