@@ -6,8 +6,6 @@ import org.springframework.boot.context.event.*;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 
-import javax.xml.bind.Element;
-
 /**
  * Demo class
  *
