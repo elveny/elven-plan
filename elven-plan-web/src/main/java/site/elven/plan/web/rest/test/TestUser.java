@@ -27,6 +27,13 @@ import java.util.Date;
 public class TestUser {
     private long id;
     private String name;
-    private double age;
+    private float age;
     private Date birthday;
+    private float height;
+    private float weight;
+    private double bodyFatRate;
+    /**
+     * 0-女；1-男
+     */
+    private int sex;
 }

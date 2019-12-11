@@ -107,8 +107,11 @@ public class TestController extends BaseController {
     public TestUser user(@RequestBody TestUser testUser){
         testUser.setId(1L);
         testUser.setName("埃尔文");
-        testUser.setAge(35.5d);
+        testUser.setAge(35.5f);
         testUser.setBirthday(new Date(84, 7, 7));
+        testUser.setHeight(172f);
+        testUser.setWeight(73f);
+        testUser.setBodyFatRate(0d);
 
         logger.info("user : {}", testUser);
         return testUser;
