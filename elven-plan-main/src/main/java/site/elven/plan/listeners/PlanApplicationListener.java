@@ -33,7 +33,6 @@ public class PlanApplicationListener implements ApplicationListener {
             logger.info("ApplicationStartedEvent");
         }
 
-
         if(event instanceof ApplicationReadyEvent){
             logger.info("ApplicationReadyEvent");
         }
