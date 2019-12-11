@@ -1,0 +1,8 @@
+#/.gitignore
+/.gradle/
+/.idea/
+/elven-plan-common/build/
+/elven-plan-main/build/
+/elven-plan-plugin/build/
+/elven-plan-web/build/
+/logs/
