@@ -36,4 +36,10 @@ public class TestUser {
      * 0-女；1-男
      */
     private int sex;
+
+
+    public double getBodyFatRate(){
+        float bmi = getWeight() / getHeight();
+        return (1.2 * bmi) + (0.23 * getAge()) - 5.4 - 10.8 * getSex();
+    }
 }

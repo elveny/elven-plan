@@ -111,10 +111,16 @@ public class TestController extends BaseController {
         testUser.setBirthday(new Date(84, 7, 7));
         testUser.setHeight(172f);
         testUser.setWeight(73f);
-        testUser.setBodyFatRate(0d);
+        testUser.setSex(1);
 
         logger.info("user : {}", testUser);
         return testUser;
+    }
+
+    @RequestMapping("exception")
+    public String exception() throws Exception {
+        logger.info("exception...");
+        throw new Exception("Ooooooooooo");
     }
 
 }
