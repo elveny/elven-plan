@@ -8,5 +8,6 @@ dependencies {
     }
     compile ("org.springframework.boot:spring-boot-starter-undertow")
     compile ("org.springframework.boot:spring-boot-starter-logging")
+    compile ("org.springframework.boot:spring-boot-starter-hateoas")
 
 }
