@@ -15,11 +15,11 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
  * @Date 2019/12/16 16:48
  */
 @RestController
-@RequestMapping("/web/rest/greeting")
+@RequestMapping("/web/rest/hateoas")
 public class GreetingController {
     private static final String TEMPLATE = "Hello, %s!";
 
-    @RequestMapping("/test")
+    @RequestMapping("/greeting")
     public HttpEntity<Greeting> greeting(
             @RequestParam(value = "name", required = false, defaultValue = "World") String name) {
 

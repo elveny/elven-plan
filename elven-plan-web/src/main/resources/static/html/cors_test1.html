@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            $("#cors").click(function(){
+                $.ajax({
+                    url: "http://localhost:8888/elven-plan/web/rest/cors/test1",
+                    success: function(data){
+                        alert(data);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" id="cors" value="cors跨域测试" />
+</body>
+</html>
