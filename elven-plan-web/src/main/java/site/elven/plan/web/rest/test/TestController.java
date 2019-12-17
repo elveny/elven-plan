@@ -123,4 +123,12 @@ public class TestController extends BaseController {
         throw new Exception("Ooooooooooo");
     }
 
+    @RequestMapping("nullPointer")
+    public String nullPointer() throws Exception {
+        logger.info("nullPointer...");
+        String str = null;
+        System.out.println(str.equals(""));
+        return "success";
+    }
+
 }

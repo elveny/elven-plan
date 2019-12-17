@@ -14,4 +14,12 @@ public class OtherController {
     public String exception() throws Exception {
         throw new Exception("Zzzzzzzzzzz");
     }
+
+    @RequestMapping("nullPointer")
+    public String nullPointer() {
+        String str = null;
+        System.out.println(str.equals(""));
+        return "success";
+    }
+
 }

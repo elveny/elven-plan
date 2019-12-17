@@ -1,1 +1,5 @@
-org.springframework.context.ApplicationListener=site.elven.plan.listeners.PlanApplicationListener
+org.springframework.context.ApplicationListener=site.elven.plan.listener.PlanApplicationListener
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+site.elven.plan.analyzer.NullPointFailureAnalyzer,\
+site.elven.plan.analyzer.PlanFailureAnalyzer,\
+

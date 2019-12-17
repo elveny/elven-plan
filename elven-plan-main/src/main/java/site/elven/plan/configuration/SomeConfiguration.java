@@ -54,7 +54,7 @@ public class SomeConfiguration {
                         .allowCredentials(true)
                         .allowedMethods("*")
                         .allowedOrigins("*")
-                        .exposedHeaders("*")
+//                        .exposedHeaders("*")
                         .maxAge(1000L)
                         ;
             }
