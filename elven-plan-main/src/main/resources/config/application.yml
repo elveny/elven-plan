@@ -37,6 +37,17 @@ server:
   servlet:
     context-path: /elven-plan
   port: 8888
+  compression: # org.springframework.boot.web.server.Compression
+    enabled: true
+    min-response-size: 2048
+    mime-type: text/html, text/xml, text/plain, text/css, text/javascript, application/javascript, application/json, application/xml
+  ssl:
+    enabled: false
+    key-store: classpath:certificates/elven-plan.jks
+    key-store-type: JKS
+    key-alias: root
+    key-store-password: 1223334444
+    key-password: 1223334444
 
 # spring.application
 spring:
@@ -45,7 +56,8 @@ spring:
     admin:
       enabled: false
   main:
-    banner-mode: "console" # off, log
+    banner-mode: "console" # console, off, log
+    web-application-type: servlet # none, servlet, reactive
   banner:
     location: banners/elven-plan-banner.txt
 

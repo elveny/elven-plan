@@ -10,4 +10,6 @@
 /elven-plan-plugin/out/
 /elven-plan-web/build/
 /elven-plan-web/out/
+/elven-plan-webflux/build/
+/elven-plan-webflux/out/
 /logs/

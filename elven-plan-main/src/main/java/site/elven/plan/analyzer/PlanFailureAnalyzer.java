@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.diagnostics.FailureAnalysis;
 import org.springframework.boot.diagnostics.FailureAnalyzer;
-import org.springframework.stereotype.Component;
 
 /**
  * Demo class
@@ -17,6 +16,6 @@ public class PlanFailureAnalyzer implements FailureAnalyzer {
     @Override
     public FailureAnalysis analyze(Throwable failure) {
         logger.error("异常信息 failure: {}", failure.getMessage());
-        return new FailureAnalysis("异常信息: ", failure.getMessage(), failure);
+        return new FailureAnalysis("异常信息: "+failure.getMessage(), "正确处理问题", failure);
     }
 }

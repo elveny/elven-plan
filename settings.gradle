@@ -3,4 +3,5 @@ include 'elven-plan-main'
 include 'elven-plan-common'
 include 'elven-plan-web'
 include 'elven-plan-plugin'
+include 'elven-plan-webflux'
 
